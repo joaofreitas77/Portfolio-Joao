@@ -269,3 +269,46 @@ h1{
     align-items: center;
     justify-content: center;
 }
+
+@media(max-width: 768px){
+    .menu{
+        flex-direction: row;
+        gap: 1.2rem;
+    }
+
+    .foto-perfil {
+        width: 200px;
+        height: 200px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    .cabecario-subtitulo {
+        font-size: 1.1rem;
+    }
+
+    .sobre-titulo,
+    .projetos-titulo {
+        font-size: 2rem;
+    }
+
+    .sobre-caixa,
+    .caixa2 {
+        padding: 1rem;
+    }
+
+    .projetos-caixa {
+        grid-template-columns: 1fr;
+    }
+
+    .container2 {
+        flex-direction: column;
+    }
+
+    .rodape {
+        height: auto;
+        padding: 1rem;
+    }
+}
