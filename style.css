@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+:root{
+    --primaria: #3B0E8C;
+    --secundaria: #5316C7;
+    --escuro: #240B57;
+    --maisEscuro: #12052B;
+    --claro: #FFFFFF;
+    --vidro: rgba(255, 255, 255, 0.1);;
+}
+
+body{
+    background-color: var(--escuro);
+    color: var(--claro);
+}
+
+.navegacao{
+    position: fixed;
+    top: 0;
+    background: var(--maisEscuro);
+    width: 100%;
+    z-index: 100;
+    padding: 1.5rem;
+}
+
+.menu{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 3rem;
+}
+
+.menu-link{
+    text-decoration: none;
+    color: var(--claro);
+    font-weight: 500;
+    position: relative;
+    padding: 0.5rem 0;
+}
+
+.menu-link::after{
+    content: '';
+    height: 2px;
+    width: 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(90deg, var(--secundaria), var(--secundaria));
+    transition: 0.5s ease;
+}
+
+.menu-link:hover::after{
+    transition: 0.5s;
+    width: 100%;
+}
+
+.cabecalho{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.foto-perfil{
+    width: 350px;
+    height: 350px;
+    box-shadow: 0 0 20px rgba(79, 70, 229, 0.3);
+    border-radius: 50%;
+    border: 4px solid var(--vidro);
+}
+
+h1{
+    font-size: 3.5rem;
+    color: var(--claro);
+    font-weight: bold;
+    margin: 10px;
+}
+
+.cabecario-subtitulo{
+    font-size: 1.5rem;
+    color: var(--claro);
+}
+
+.sobre{
+    padding: 6rem 2rem; /*cima baixo | lados */
+}
+
+.sobre-titulo{
+    font-size: 3rem;
+    color: var(--claro);
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.sobre-caixa{
+    padding: 2rem;
+    max-width: 1000px;
+    margin: 0 auto; /*centraliza algo em uma div ja criada colocando 0 em cima e baixo e automatico dos lados*/
+    border-radius: 16px;
+    border: 1px solid var(--vidro);
+    backdrop-filter: blur(10px);
+    background-color: var(--maisEscuro);
+}
+
+.sobre-paragrafo{
+    text-align: center;
+    font-size: 1rem;
+}
+
+.projetos{
+
+}
+
+.projetos-titulo{
+
+}
+
+.projetos-caixa{
+    
+}
+
+.projetos-card{
+
+}
+
+.projetos-imagem{
+
+}
+
+.info-projetos{
+
+}
+
+.paragrafo-projetos{
+
+}
