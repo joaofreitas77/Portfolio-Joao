@@ -25,4 +25,5 @@ Contato — Formas de entrar em contato e links para redes sociais.
 # Contato
 
 Github: https://github.com/joaofreitas77
+
 Linkedin: https://www.linkedin.com/in/jo%C3%A3o-pedro-gon%C3%A7alves-freitas-b753b6360/
