@@ -1,31 +1,32 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-html{
+html {
     scroll-behavior: smooth;
 }
 
-:root{
-    --primaria: #3B0E8C;
-    --secundaria: #5316C7;
-    --escuro: #000000;
-    --maisEscuro: #0E1015;
+:root {
+    --primaria: #A31010;
+    --secundaria: #CC0E0E;
+    --escuro: #470A10;
+    --maisEscuro: #300000;
+    --preto: #000000;
     --claro: #FFFFFF;
     --vidro: rgba(255, 255, 255, 0.1);
 }
 
-body{
+body {
     background-color: var(--escuro);
     color: var(--claro);
     max-width: 100vw;
     overflow-x: hidden;
 }
 
-.navegacao{
+.navegacao {
     position: fixed;
     top: 0;
     background: var(--maisEscuro);
@@ -34,14 +35,14 @@ body{
     padding: 1.5rem;
 }
 
-.menu{
+.menu {
     display: flex;
     justify-content: center;
     list-style: none;
     gap: 3rem;
 }
 
-.menu-link{
+.menu-link {
     text-decoration: none;
     color: var(--claro);
     font-weight: 500;
@@ -49,7 +50,7 @@ body{
     padding: 0.5rem 0;
 }
 
-.menu-link::after{
+.menu-link::after {
     content: '';
     height: 2px;
     width: 0;
@@ -60,12 +61,12 @@ body{
     transition: 0.5s ease;
 }
 
-.menu-link:hover::after{
+.menu-link:hover::after {
     transition: 0.5s;
     width: 100%;
 }
 
-.cabecalho{
+.cabecalho {
     min-height: 100vh;
     display: flex;
     justify-content: center;
@@ -74,7 +75,7 @@ body{
     text-align: center;
 }
 
-.foto-perfil{
+.foto-perfil {
     width: 350px;
     height: 350px;
     box-shadow: 0 0 20px rgba(79, 70, 229, 0.3);
@@ -82,67 +83,67 @@ body{
     border: 4px solid var(--vidro);
 }
 
-h1{
+h1 {
     font-size: 3.5rem;
     color: var(--claro);
     font-weight: bold;
     margin: 10px;
 }
 
-.cabecario-subtitulo{
+.cabecario-subtitulo {
     font-size: 1.5rem;
     color: var(--claro);
 }
 
-.sobre{
-    padding: 6rem 2rem; /*cima baixo | lados */
+.sobre {
+    padding: 6rem 2rem;
+    /*cima baixo | lados */
 }
 
-.sobre-titulo{
+.sobre-titulo {
     font-size: 3rem;
     color: var(--claro);
     margin-bottom: 20px;
     text-align: center;
 }
 
-.sobre-caixa{
+.sobre-caixa {
     padding: 2rem;
     max-width: 1000px;
-    margin: 0 auto; /*centraliza algo em uma div ja criada colocando 0 em cima e baixo e automatico dos lados*/
+    margin: 0 auto;
+    /*centraliza algo em uma div ja criada colocando 0 em cima e baixo e automatico dos lados*/
     border-radius: 16px;
     border: 1px solid var(--vidro);
     backdrop-filter: blur(10px);
     background-color: var(--maisEscuro);
 }
 
-.sobre-paragrafo{
+.sobre-paragrafo {
     text-align: center;
     font-size: 1rem;
 }
 
-.projetos{
+.projetos {
     padding: 6rem 2rem;
     text-decoration: none;
 }
 
-.projetos-titulo{
+.projetos-titulo {
     font-size: 3rem;
     color: var(--claro);
     margin-bottom: 50px;
     text-align: center;
-    text-decoration: none;
 }
 
-.projetos-caixa{
+.projetos-caixa {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
     max-width: 1200px;
     margin: 0 auto;
-    text-decoration: none;
 }
 
-.projetos-card{
+.projetos-card {
     background-color: var(--maisEscuro);
     border-radius: 16px;
     backdrop-filter: blur(5px);
@@ -150,48 +151,39 @@ h1{
     overflow: hidden;
     transition: 0.5s ease;
     cursor: pointer;
-    text-decoration: none;
 }
 
-.projetos-card:hover{
-    box-shadow: 0 10px 20px #303030;
+.projetos-card:hover {
+    box-shadow: 0 10px 20px var(--primaria);
     transform: translateY(-10px) scale(1.03);
     transition: 0.5s ease;
-    text-decoration: none;
 }
 
-.projetos-imagem{
+.projetos-imagem {
     height: 200px;
     width: 100%;
     object-fit: cover;
-    text-decoration: none;
 }
 
-.caixa-textos-projetos{
+.caixa-textos-projetos {
     padding: 1.5rem;
-    text-decoration: none;
 }
 
-.href{
-    text-decoration: none;
-}
-
-.info-projetos{
+.info-projetos {
     margin-bottom: 5px;
-    text-decoration: none;
     color: var(--claro);
 }
 
-.paragrafo-projetos{
+.paragrafo-projetos {
     color: var(--claro);
     line-height: 1.25rem;
 }
 
-.contatos-titulo{
+.contatos-titulo {
     margin-top: 20px;
 }
 
-.contatos{
+.contatos {
     display: flex;
     flex-direction: column;
     background-color: var(--maisEscuro);
@@ -201,19 +193,19 @@ h1{
     gap: 2rem;
 }
 
-.container2{
+.container2 {
     display: flex;
     flex-direction: row;
 }
 
-.contatos-lista{
+.contatos-lista {
     display: flex;
     flex-direction: column;
     width: 100%;
     margin: 2% 4% 1%;
 }
 
-.contatos-lista li{
+.contatos-lista li {
     display: flex;
     align-items: center;
     padding: 10px 0 10px 0;
@@ -221,7 +213,7 @@ h1{
     font-weight: 500;
 }
 
-.contatos-lista li a{
+.contatos-lista li a {
     display: flex;
     align-items: center;
     text-decoration: none;
@@ -229,23 +221,24 @@ h1{
     color: var(--claro);
 }
 
-.contatos-lista li img{
+.contatos-lista li img {
     width: 20px;
     height: 20px;
 }
 
-#imgemail{
+#imgemail {
     filter: invert(1);
 }
 
-#imggithub{
+#imggithub {
     filter: invert(1);
 }
 
-.caixa2{
+.caixa2 {
     padding: 2rem;
     max-width: 600px;
-    margin: 0 auto; /*centraliza algo em uma div ja criada colocando 0 em cima e baixo e automatico dos lados*/
+    margin: 0 auto;
+    /*centraliza algo em uma div ja criada colocando 0 em cima e baixo e automatico dos lados*/
     border-radius: 16px;
     border: 1px solid var(--vidro);
     backdrop-filter: blur(10px);
@@ -256,12 +249,12 @@ h1{
     margin-bottom: 20px;
 }
 
-.caixa2-paragrafo{
+.caixa2-paragrafo {
     text-align: center;
     font-size: 1rem;
 }
 
-.rodape{
+.rodape {
     width: 100%;
     height: 150px;
     display: flex;
@@ -270,8 +263,27 @@ h1{
     justify-content: center;
 }
 
-@media(max-width: 768px){
-    .menu{
+.linha {
+    width: 100%;
+    height: 1px;
+    background-color: var(--claro);
+}
+
+.linha1 {
+    position: absolute;
+    top: 7%;
+    width: 100%;
+    height: 1px;
+    background-color: var(--claro);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+@media(max-width: 768px) {
+    .menu {
         flex-direction: row;
         gap: 1.2rem;
     }
