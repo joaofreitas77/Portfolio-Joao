@@ -14,9 +14,9 @@ O foco principal é demonstrar minhas habilidades técnicas com HTML e CSS, apli
 
 O site é dividido em quatro tópicos principais:
 
-Início
-Sobre
-Projetos
+Início<br>
+Sobre<br>
+Projetos<br>
 Contato
 
 # Contato
