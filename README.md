@@ -1,4 +1,4 @@
-# 🌐 Portfólio — João Pedro
+# 🌐 Portfólio - João Pedro
 
 Bem-vindo ao meu portfólio pessoal!
 Este projeto foi desenvolvido com o objetivo de apresentar minhas habilidades, projetos e formas de contato de maneira simples, moderna e responsiva.
@@ -14,13 +14,10 @@ O foco principal é demonstrar minhas habilidades técnicas com HTML e CSS, apli
 
 O site é dividido em quatro tópicos principais:
 
-Início — Apresentação principal com minha foto e função.
-
-Sobre — Breve descrição pessoal e profissional.
-
-Projetos — Espaço para exibir trabalhos e experiências de desenvolvimento.
-
-Contato — Formas de entrar em contato e links para redes sociais.
+Início
+Sobre
+Projetos
+Contato
 
 # Contato
 
